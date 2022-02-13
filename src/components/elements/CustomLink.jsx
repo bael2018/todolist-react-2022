@@ -8,7 +8,7 @@ const CustomLink = ({ children , to , ...props }) => {
         <Link 
             to={to} 
             {...props}
-            className={match && cls.active}
+            className={` ${match && cls.active}`}
         >
             {children}
         </Link>
