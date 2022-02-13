@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+a{
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    transition: .3s;
+    padding: 6px 20px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.active{
+    background: white;
+    color: $app-main-color;
+}

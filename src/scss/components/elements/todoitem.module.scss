@@ -1,0 +1,77 @@
+@import '../../variables.scss';
+
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: .5px solid $app-main-color;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 900px){
+        
+        &{
+            padding: 15px 30px;
+        }
+    }
+
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            margin: 0;
+            margin-right: 20px;
+            font-weight: 500;
+            color: rgb(88, 88, 88);
+        }
+
+        h4{
+            margin: 0;
+            color: $app-main-color;
+        }
+
+        span{
+            font-size: 23px;
+            cursor: pointer;
+            margin-left: 25px;
+        }
+
+        span:nth-child(1){
+            color: $app-main-color;
+        }
+
+        span:nth-child(2){
+            color: red;
+        }
+
+        span:nth-child(3){
+            color: green;
+        }
+
+        @media screen and (max-width: 600px){
+            
+            &{
+                span{
+                    font-size: 21px;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+
+    &_active{
+        border-bottom: .5px solid white;
+        background: $app-main-color;
+
+        p,
+        h4{
+            color: white !important;
+        }
+
+        span:nth-child(1){
+            color: white !important;
+        }
+    }
+}

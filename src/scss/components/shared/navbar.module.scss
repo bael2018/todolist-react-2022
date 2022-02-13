@@ -1,0 +1,9 @@
+@import '../../variables.scss';
+
+.navbar{
+    background: $app-main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}

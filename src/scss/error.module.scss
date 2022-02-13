@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    font-size: 30px;
+    font-weight: 600;
+
+    div{
+        text-align: center;
+
+        h3{
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        span{
+            cursor: pointer;
+            color: $app-main-color;
+        }
+    }
+}
