@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom"
 import { Navbar } from "../shared/Navbar"
 
-const MainLayout = () => {
+const AppLayout = () => {
     return (
         <>
             <Navbar/>
@@ -10,4 +10,4 @@ const MainLayout = () => {
     )
 }
 
-export { MainLayout }
+export { AppLayout }
