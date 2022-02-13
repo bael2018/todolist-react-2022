@@ -2,6 +2,7 @@ import { rootActions } from "../../store/actions/pagination-action"
 import cls from '../../scss/components/partials/pagination.module.scss'
 import { useSelector , useDispatch } from "react-redux"
 import { useState } from "react"
+import { limit } from '../../constants'
 
 const Pagination = () => {
     const { prev , next } = useSelector(state => state.paginate)
@@ -33,7 +34,7 @@ const Pagination = () => {
             </button>
             <span>Page {pageCounter}</span>
             <button 
-                className={` ${next === todos?.length && cls.pagination_disabled}`}
+                className={` ${todos?.length / limit <= pageCounter && cls.pagination_disabled}`}
                 onClick={nextBtnHander}
             >
                 NEXT

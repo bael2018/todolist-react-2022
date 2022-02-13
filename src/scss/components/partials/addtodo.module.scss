@@ -1,0 +1,33 @@
+@import '../../variables.scss';
+
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0; 
+    margin-bottom: 30px;
+
+    input{
+        border: 1px solid grey;
+        outline: none;
+        width: 400px;
+        padding: 0 15px;
+        height: 40px;
+        color: rgb(36, 36, 36);
+
+        @media screen and (max-width: 550px){
+            width: 300px;
+        }
+    }
+
+    button{
+        height: 40px;
+        background: $app-main-color;
+        border: none;
+        color: white;
+        outline: none;
+        padding: 0 15px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}

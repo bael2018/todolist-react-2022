@@ -7,6 +7,7 @@ import { Loader } from '../elements/ui/Loader'
 import { EditModal } from './EditModal'
 import { Pagination } from './Pagination'
 import { RejectHanler } from './RejectHandler'
+import { AddTodo } from '../partials/AddTodo'
 
 const TodoList = () => {
     const { todos , error , status } = useSelector(state => state.todo)
@@ -28,6 +29,7 @@ const TodoList = () => {
                     (
                         todos.length ? (
                             <div>   
+                                <AddTodo/>
                                 {
                                     todos.slice(prev , next).map(item => <TodoItem key={item.id} todo={item}/>)
                                 }
